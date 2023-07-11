@@ -69,6 +69,9 @@ virtual reality, akkommodation-vergenz konflikt, elektroenzephalografie
 VR Brillen verwenden Stereoskopie, bei welcher jedem Auge leicht unterschiedliche Informationen durch eine horizontale Verschiebung der Bilder zugespielt werden, damit bei dem Nutzer eine 3D Wirkung der Darstellung entsteht. Durch die entstehenden Parallaxen kann die Szene den Eindruck erwecken, aus der Leinwand hervor zu stechen oder dahinter zu liegen.\cite{b4}
 Die hier beschriebene Untersuchung konzentriert sich auf den Accommodation Vergenz Konflikt. Dieser tritt gerade in der modernen VR Technologie auf, da durch die Linsen der VR Brille die Bildebene in eine weite Entfernung projiziert wird und die Objekte in VR durch die Interaktion in greifbarer Nähe sind.
 “In order to see one object, the eyeballs need to rotate accordingly. This mechanism is called the “vergence”. In a natural situation, as an object is moving closer or further, vergence matches another physiological phenomena: “accommodation”. It enables the object’s image to remain clear on the retina. It is caused by a deformation of the crystalline lens, which focuses light beams the same way camera lenses do.”\cite{b1}
+
+Besonders interessante Hirnregionen bezüglich der Okulomotorik sind hierbei unteranderem das  Mittelhirn aus welchem drei Hirnnerven zu den Augen verlaufen wobei der N. oculomotorius unteranderem auch für die Akkomodation des Auges zuständig ist \cite{b6}. Hierbei ist es vorallem anspruchsvoll erkennbar zu machen ob die gemessenen Werte des EEGs wirklich durch den Akkomodation-Vergenzkonflikt kommen, da beim Sehvorgang diverse Regionen des Gehirns angesprochen werden wie die primäre Sehrinde im Hinteren Hauptslappen der Großhirnrinde, der Scheitellappen unteranderem zur Erkennung wo sich etwas befindet und der Schläfenlappen zur Objekterkennung etc. \cite{b8}. Schlussendlich könnte evtl. der primär sensorische Kortex mit den Bereichen die Wilder Penfield ermittelt hat durch starke Werte vermitteln ob sich ein Einfluss des Akkomodation-Vergenzkonfliktes im EEG nachweisen lässt \cite{b7}.
+
 Durch den Versuch soll aufgezeigt werden, ob mögliche Probleme in Anwendungen, welche in dem kritischen Bereich des Akkomodation-Vergenz Konflikt arbeiten, durch das EEG nachweisbar sind oder nicht. Somit kann sich zukünftige Forschung ebenfalls diesem Bereich widmen.
 
 \section{Related Work}
@@ -87,7 +90,20 @@ Auch hier können die Ergebnisse des EEGs mit unseren Ergebnissen verglichen wer
  
 
 \section{Methodik}
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+\subsection{Material}
+Als VR-Brille wurde eine Vive Pro 2 verwendet. Die EEG Messung wurde mit dem EEG Gerät …… von Neurospec durchgeführt. Zur Verwaltung der Antworten im SSQ und der allgemeinen Daten wurden die Fragebögen mit Google-Forms erstellt. Aus Datenschutzgründen wurden zur Zuordnung der Daten anonyme Codes verwendet und keine personalisierten Daten der Probanden online abgespeichert. Zur Auswertung der EEG Daten wurde die Software …… von Neurospec verwendet. Die verwendete Entspannungszene in welcher der Proband sich während dem Test befindet wurde von einer vorherigen Forschungsgruppe in Unity entwickelt. Diese konnte Ergebnisse erzielen welche auf einen positiven Effekt auf die Entspannung der Nutzer schließen lässt. Anpassungen für dieses Experiment und die Ausführung des Experiments wurden ebenfalls in Unity durchgeführt.
+
+\subsection{Versuchsdurchführung}
+Das Experiment wurde in den Räumlichkeiten der Hochschule Furtwangen durchgeführt. Vor der Durchführung des Tests wurden die Versuchspersonen auf bekannte Sehschwächen, Epilepsie oder vorhandene partielle Blindheit befragt. Nach der Zustimmung der Einverständniserklärung bezüglich Datenverarbeitung und Risiken wurde ein Random-Dot Test zur Erfassung des möglichen Tiefensehens durchgeführt und die IPD vermessen. Danach füllte der Proband einen Pre-Simulator-Sickness-Questionaire aus. Der Proband wurde nach dem SSQ auf einen Liegestuhl gebeten. Hier wurde die VR-Brille passend zur gemessenen IPD angelegt und das EEG aufgesetzt. Der Proband wurde aufgeklärt, dass er wärend dem Test starkes Zwinkern, bewusste Kopfbewegungen oder auf die Zähne beißen vermeiden sollte, da dies alles Einfluss auf die EEG Messdaten hat.\\
+Der Proband bekam nachdem alle Geräte angelegt und kalibriert waren ein Entspannungszene vorgespielt. In dieser Szene befindet sich ein Würfel welcher einen grünen Punkt als Markierung auf seiner Oberfläche besitzt. Die Markierung soll zur leichteren Fokussierung des Würfels dienen. Nachdem der Proband mit einem Handzeichen signalisiert hatte, dass er sich in der Szene wohl fühlt kam der Würfel langsam auf ihn zu. Hierbei sollte der Proband durchgängig den Würfel fokussieren. Der Würfel legt hierbei innerhalb von 4 Minuten einen Weg von ca. 13 Meter bis auf 13 Zentimeter Entfernung zum Probanden in VR zurück. Sobald der Würfel bei 13 Zentimeter angekommen ist verweilte er dort 10 Sekunden. Danach füllte der Proband den Post-Simulator-Sickness-Questionaire aus.\\
+Die Durchführung des Experiments betrug ca. 25-50 Minuten. 7-10 Minuten benötigte die Einführung und die Fragebögen, 5 Minuten die Zeit in VR und ca. 10-35 Minuten das Anlegen und Kallibrieren des EEGs. 
+
+\subsection{Datenerhebung und Verarbeitung}
+Die Daten welche mit Google Forms erhoben wurden, konnten als csv-Dateien heruntergeladen werden. Diese Daten wurden in Excel verarbeitet. Die demografischen Daten wurden als Kreisdiagramme (vgl. Fig. 2) und Boxplots verarbeitet (vgl. Fig 1).
+Die Ergebnisse des SSQ Fragebogen wurden im Vorher-Nachher Vergleich als Blockplots gegenüber gestellt. (vgl. Fig 3).\\
+!! Nick hier seinen Teil !!
+
+
 
 \section{Ergebnisse}
 Hier kommen ein paar Ergebnisse rein...
@@ -144,6 +160,12 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 \bibitem{b4} U. Schmidt, Professionelle Videotechnik: Grundlagen, Filmtechnik, Fernsehtechnik (S. 27-28), Geräte- und Studiotechnik in SD, HD, DI, 3D, 6. Aufl. Berlin, Heidelberg: Springer Berlin Heidelberg; Imprint: Springer Vieweg, 2013.
 
 \bibitem{b5} M. Guo, Y. Liu, B. Zou und Y. Wang, 'Study of electroencephalography-based objective stereoscopic visual fatigue evaluation,' in 2015 International Symposium on Bioelectronics and Bioinformatics (ISBB), 2015, S. 160–163, doi: 10.1109/ISBB.2015.7344948.
+
+\bibitem{b6} P. Geraedts, Motorische Entwicklung und Steuerung: Eine Einführung für Physiotherapeuten, Ergotherapeuten und Trainer, 1. Aufl. Berlin, Germany: SPRINGER, 2020, S. 154-155.
+
+\bibitem{b7} Wilder Penfield und Theodore Rasmussen, The Cerebral Cortex of Man: A Clinical Study of Localization of Function. New York: The Macmillan Company, 1950, S. 22.
+
+\bibitem{b8} Frings, Biologie der Sinne. Springer Berlin Heidelberg, 2019, S. 193.
 
 \end{thebibliography}
 \vspace{12pt}
