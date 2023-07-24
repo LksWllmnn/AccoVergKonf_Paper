@@ -11,6 +11,21 @@
 \usepackage[colorlinks=true,citecolor=blue]{hyperref}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+\documentclass{article}
+\usepackage{enumitem}
+\usepackage{lipsum} % für Beispieltext
+
+% Stildefinition
+\newlist{myitemize}{itemize}{1}
+\setlist[myitemize]{%
+  label=\textbullet,
+  leftmargin=*,
+  itemsep=0pt,
+  parsep=0pt,
+  listparindent=1.5em, % Einrückung der ersten Zeile eines Absatzes
+}
+
 \begin{document}
 
 \title{Untersuchung der Nachweisbarkeit des Akkommodation-Vergenzkonflikts in einem EEG in einer VR entspannungs Szene\\
@@ -155,15 +170,50 @@ Hier kommen noch mehr Ergebnisse rein...
 \subsection{Limitationen}
 Diese Einschränkungen sollten bei der Interpretation der Ergebnisse berücksichtigt werden:
 
-\begin{enumerate}
+\begin{myitemize}
 	\item Unerfahrenheit mit EEG Technologie: Unser Team bestand aus fünf Studenten, die alle unerfahren im Umgang mit EEG-Technologien waren. Es wurde eine Einführung in das richtige Anlegen der Kappe, sowie Brille durchgeführt. Dennoch führte diese Unerfahrenheit zu Herausforderungen beim korrekten Anlegen der EEG-Elektroden bei einigen Probanden, insbesondere wenn diese bereits ein VR-Headset trugen. Dies könnte sich auf die Qualität der EEG-Signale ausgewirkt haben.
 	\item Probandenauswahl: Die Anzahl der verfügbaren Probanden war begrenzt und es musste sicher gestellt werden, dass die ausgewählten Teilnehmer sowohl die erforderlichen Kriterien für unsere Forschungsfrage erfüllten als auch bereit waren, an den Probentests teilzunehmen.
 	\item Stichprobengröße: Aufgrund der begrenzten Ressourcen und der Zeitbeschränkung konnte die Stichprobengröße nicht so groß sein, wie es für eine umfassendere Studie wünschenswert gewesen wäre. Eine größere Stichprobe hätte möglicherweise genauere und repräsentativere Ergebnisse erbracht.
 	\item Beschränkungen der VR-Technologie: Bei Probanden mit kleineren Köpfen war es schwierig, das EEG richtig aufzusetzen, da das VR Headset zu viel Platz in der Stirnregion wegnahm. Dies beeinträchtigte möglicherweise die Platzierung der Elektroden und die Qualität der EEG-Signale.
 	\item Mangelnde Erfahrung mit der verwendeten Software: Die Analyse der EEG-Daten erforderte den Einsatz spezifischer Software. Da innerhalb der Forschungsgruppe keine Erfahrung im Umgang mit der Analysesoftware bestand, musste zur Auswertung Recherche betrieben werden. Diese fehlende Erfahrung verlangsamte den Analyseprozess und erhöht das Potenzial für Fehler.
-\end{enumerate}
-Es wird empfohlen, dass zukünftige Studien diese Einschränkungen berücksichtigen und gegebenenfalls weitere Untersuchungen durchführen, um die Auswirkungen dieser Faktoren auf die Ergebnisse zur Erkennung von potentiellem Stress durch den Akkomodations-Vergenz Konflikt zu minimieren.
+    \item Einschränkungen in Bezug auf Qualifikation und Expertise:
+    Obwohl das Studienteam den Nutzertest erfolgreich durchgeführt und wertvolle Daten gesammelt hat, muss hervorgehoben werden, dass sich die Interpretation der EEG-Ergebnisse außerhalb der Expertise des Teams befindet. Da das Team aus keiner ausgebildeten medizinischen oder neurowissenschaftlichen Fachkraft besteht, fehlt das notwendige Wissen, um neurologische Daten präzise zu interpretieren und verlässliche Schlussfolgerungen daraus zu ziehen. Die Analyse kann daher nur auf oberflächliche Beobachtungen und allgemeine Trends in den Daten eingehen.
 
+    In zukünftigen Studien, in denen neurologische Daten ausgewertet werden sollen, ist es von entscheidender Bedeutung, die richtige Testumgebung zu gewährleisten und die Zusammenarbeit mit qualifizierten Fachleuten in den Bereichen Neurologie und Datenanalyse sicherzustellen. Dies würde es ermöglichen, die gesammelten Daten vollständig zu nutzen und fundierte, wissenschaftliche Schlussfolgerungen zu ziehen. 
+    
+    Diese Einschränkung in Bezug auf die Qualifikation sollte nicht als Entschuldigung für ungenaue Ergebnisse angesehen werden, sondern vielmehr als Anreiz für zukünftige Projekte, bei denen eine interdisziplinäre Zusammenarbeit zur Maximierung der Qualität und Aussagekraft der Forschung angestrebt wird.
+
+    Nichtsdestotrotz stellen diese Informationen eine wertvolle Ressource dar, die von qualifizierten Fachleuten in zukünftigen Projekten genutzt werden kann. Sie können als Vergleichsbasis dienen und dazu beitragen, Trends, Muster oder Abweichungen in ähnlichen Studien zu identifizieren. Dies unterstreicht die Bedeutung der Datenerfassung und -aufbewahrung, auch wenn die sofortige Analyse und Interpretation der Daten nicht möglich ist. Es wird empfohlen, zukünftige Teams und Fachleute zu ermutigen, diese Daten in ihrer Arbeit zu berücksichtigen und weiter zu erforschen.
+
+    In zukünftigen Studien, in denen neurologische Daten ausgewertet werden sollen, ist es von entscheidender Bedeutung, die richtige Testumgebung zu gewährleisten und die Zusammenarbeit mit qualifizierten Fachleuten in den Bereichen Neurologie und Datenanalyse sicherzustellen. Dies würde es ermöglichen, die gesammelten Daten vollständig zu nutzen und fundierte, wissenschaftliche Schlussfolgerungen zu ziehen.
+
+    Diese Einschränkung in Bezug auf die Qualifikation sollte nicht als Entschuldigung für ungenaue Ergebnisse angesehen werden, sondern vielmehr als Anreiz für zukünftige Projekte, bei denen eine interdisziplinäre Zusammenarbeit zur Maximierung der Qualität und Aussagekraft der Forschung angestrebt wird.
+
+    Nichtsdestotrotz stellen diese Informationen eine wertvolle Ressource dar, die von qualifizierten Fachleuten in zukünftigen Projekten genutzt werden kann. Sie können als Vergleichsbasis dienen und dazu beitragen, Trends, Muster oder Abweichungen in ähnlichen Studien zu identifizieren. Dies unterstreicht die Bedeutung der Datenerfassung und -aufbewahrung, auch wenn die sofortige Analyse und Interpretation der Daten nicht möglich ist. Es wird empfohlen, zukünftige Teams und Fachleute zu ermutigen, diese Daten in ihrer Arbeit zu berücksichtigen und weiter zu erforschen.
+
+    Es wird empfohlen, dass zukünftige Studien diese Einschränkungen berücksichtigen und gegebenenfalls weitere Untersuchungen durchführen, um die Auswirkungen dieser Faktoren auf die Ergebnisse zur Erkennung von potentiellem Stress durch den Akkomodations-Vergenz Konflikt zu minimieren.
+\end{myitemize}
+
+\subsection{Analyse}
+Für die Analyse der Daten werden folgende Bandbreiten der EEG-Wellen betrachtet:
+\begin{myitemize}
+    \item Delta-Wellen (0,5 - 4 Hz): Diese sind oft während des tiefen Schlafes dominant.
+    \item Theta-Wellen (4 - 8 Hz): Diese sind oft dominant in Zuständen tiefer Entspannung und Meditation.
+    \item Alpha-Wellen (8 - 12 Hz): Diese sind oft dominant in Zuständen ruhiger Wachheit.
+    \item Beta-Wellen (12 - 30 Hz): Diese sind oft dominant, wenn aktiv gedacht oder sich konzentriert wird.
+    \item Gamma-Wellen (30 - 100 Hz): Diese werden oft mit hoher geistiger Aktivität und Informationsverarbeitung assoziiert.
+\end{myitemize}
+
+Die Analyse unterscheidet zudem drei Intervalle, die sich auf die Entfernung des zu fokussierenden Objekts beziehen:
+
+\begin{myitemize}
+    \item Erstes Intervall: Das Objekt bewegt sich vom Start (ca. 28 Meter) bis auf eine Entfernung von 1,5 Metern, was einer Dauer von drei Minuten entspricht. Hierbei ist zu beachten, dass die Startposition eine minimale Differenz aufweisen kann, da sich jeder Proband individuell bewegt und positioniert hat. Die Differenz beträgt nur wenige Zentimeter.
+    \item Zweites Intervall: Das Objekt befindet sich in einer Entfernung zwischen 1,5 und 0,3 Metern, was einer Dauer von acht Sekunden entspricht.
+    \item Drittes Intervall: Das Objekt befindet sich in einer Entfernung zwischen 0,3 und 0,15 Metern, was einer Dauer von etwa 15 bis 24 Sekunden entspricht.
+\end{myitemize}
+
+
+\end{myitemize}
 \subsection{Bemerkungen}
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
