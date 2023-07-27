@@ -114,11 +114,15 @@ Für das Experiment wurde eine Vive Pro VR-Brille \cite{b11} eingesetzt. Die EEG
 \subsection{Versuchsdurchführung}
 Das Experiment wurde in den Räumlichkeiten der Hochschule Furtwangen durchgeführt. Vor Beginn des Tests wurden die Probanden nach bekannten Sehschwächen, Epilepsie oder bestehender partieller Blindheit befragt. Nachdem die Teilnehmer die Einverständniserklärung zur Datenverarbeitung und Risiken akzeptiert hatten, wurde ein Random-Dot-Test zur Erfassung des möglichen Tiefensehens durchgeführt und der interpupillare Abstand (IPD) gemessen. Anschließend füllten die Probanden einen Pre-Simulator-Sickness-Fragebogen aus. Nach dem Ausfüllen des Fragebogens wurden sie auf einen Liegestuhl gebeten. Hier wurde die VR-Brille entsprechend der gemessenen IPD eingestellt und das EEG aufgesetzt. Den Probanden wurde mitgeteilt, dass sie während des Tests starkes Zwinkern, bewusste Kopfbewegungen oder Zähneknirschen vermeiden sollten, da diese Faktoren die EEG-Messdaten beeinflussen können.
 
-Nachdem alle Geräte angelegt und kalibriert waren, wurde den Probanden eine Entspannungsszene vorgeführt. In dieser Szene war ein Würfel mit einem grünen Punkt auf seiner Oberfläche zu sehen. Diese Markierung sollte das Fokussieren des Würfels erleichtern. Nachdem der Proband mit einer Handbewegung signalisiert hatte, dass er sich in der Szene wohl fühlte, bewegte sich der Würfel langsam auf ihn zu. Der Proband sollte während dieser Phase kontinuierlich den Würfel fokussieren. Innerhalb von vier Minuten legte der Würfel in der VR eine Strecke von etwa 13 Metern zurück und stoppte in einer Entfernung von 13 Zentimetern zum Probanden. Nach einer Verweildauer von zehn Sekunden in dieser Position füllte der Proband den Post-Simulator-Sickness-Fragebogen aus.
+Nachdem alle Geräte angelegt und kalibriert waren, wurde den Probanden eine Entspannungsszene vorgeführt. In dieser Szene war ein Würfel mit einem grünen Punkt auf seiner Oberfläche zu sehen. Diese Markierung sollte das Fokussieren des Würfels erleichtern. Nachdem der Proband mit einer Handbewegung signalisiert hatte, dass er sich in der Szene wohl fühlte, bewegte sich der Würfel langsam auf ihn zu. Der Proband sollte während dieser Phase kontinuierlich den Würfel fokussieren. Innerhalb von vier Minuten legte der Würfel in der VR eine Strecke von etwa 28 Metern zurück und stoppte in einer Entfernung von 13 Zentimetern zum Probanden. Nach einer Verweildauer von zehn Sekunden in dieser Position füllte der Proband den Post-Simulator-Sickness-Fragebogen aus.
 
-Der Stimuli des Tests ist der Würfel, welcher sich dem Probanden durchgehend in den 4 Minuten in einer konstanten Geschwindigkeit nähert. Um das Erkennen der genauen Entfernung des Würfels für den Probanden zu verhindern wurde der Würfel in seiner Skalierung verhältnismäßig zur Entfernung zum Probanden kleiner Skaliert: 
-$Vector3\ \_targetScale=(Vector3.one*Vector3.Distance(transform.position,\\  \_playerTransform.position)/5)$\\
-$transform.localScale=\\Vector3.Lerp(transform.localScale, \_targetScale,\\ \_scaleSpeed * Time.fixedDeltaTime);$\\
+Der Stimuli des Tests ist der Würfel, welcher sich dem Probanden durchgehend in den 4 Minuten in einer konstanten Geschwindigkeit nähert. Um das Erkennen der genauen Entfernung des Würfels für den Probanden zu verhindern wurde der Würfel in seiner Skalierung verhältnismäßig zur Entfernung zum Probanden kleiner Skaliert (siehe Abbildung \ref{fig:scale_cube}). 
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.5\textwidth]{assets/Scalling.jpg} \\
+	\caption{Skallierung des Würfels}
+	\label{fig:scale_cube}
+\end{figure}
 Durch die Entfernung dieser monokularen Tiefeninformation soll das Annähern des Würfels eine mögliche bedrohliche Wirkung auf den Probanden verringern. In der Szene wurde ein Bereich gewählt in welchem möglichst wenig Bäume  vorhanden sind, damit es beim Probanden nicht zu Problemen der Fixationsdisparitäten kommt.
 
 Die Durchführung des Experiments dauerte insgesamt etwa 25 bis 50 Minuten. Sieben bis zehn Minuten davon wurden für die Einführung und die Fragebögen benötigt, fünf Minuten für die Zeit in der VR und etwa 10 bis 35 Minuten für das Anlegen und Kalibrieren des EEGs. 
@@ -170,36 +174,6 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 \end{figure}
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
-Hier kommen noch mehr Ergebnisse rein...
-
-\section{Diskussion}
-\subsection{Limitationen}
-Diese Einschränkungen sollten bei der Interpretation der Ergebnisse berücksichtigt werden:
-
-\begin{myitemize}
-	\item Unerfahrenheit mit EEG Technologie: Unser Team bestand aus fünf Studenten, die alle unerfahren im Umgang mit EEG-Technologien waren. Es wurde eine Einführung in das richtige Anlegen der Kappe, sowie Brille durchgeführt. Dennoch führte diese Unerfahrenheit zu Herausforderungen beim korrekten Anlegen der EEG-Elektroden bei einigen Probanden, insbesondere wenn diese bereits ein VR-Headset trugen. Dies könnte sich auf die Qualität der EEG-Signale ausgewirkt haben.
-	\item Probandenauswahl: Die Anzahl der verfügbaren Probanden war begrenzt und es musste sicher gestellt werden, dass die ausgewählten Teilnehmer sowohl die erforderlichen Kriterien für unsere Forschungsfrage erfüllten als auch bereit waren, an den Probentests teilzunehmen.
-	\item Stichprobengröße: Aufgrund der begrenzten Ressourcen und der Zeitbeschränkung konnte die Stichprobengröße nicht so groß sein, wie es für eine umfassendere Studie wünschenswert gewesen wäre. Eine größere Stichprobe hätte möglicherweise genauere und repräsentativere Ergebnisse erbracht.
-	\item Beschränkungen der VR-Technologie: Bei Probanden mit kleineren Köpfen war es schwierig, das EEG richtig aufzusetzen, da das VR Headset zu viel Platz in der Stirnregion wegnahm. Dies beeinträchtigte möglicherweise die Platzierung der Elektroden und die Qualität der EEG-Signale.
-	\item Mangelnde Erfahrung mit der verwendeten Software: Die Analyse der EEG-Daten erforderte den Einsatz spezifischer Software. Da innerhalb der Forschungsgruppe keine Erfahrung im Umgang mit der Analysesoftware bestand, musste zur Auswertung Recherche betrieben werden. Diese fehlende Erfahrung verlangsamte den Analyseprozess und erhöht das Potenzial für Fehler.
-    \item Einschränkungen in Bezug auf Qualifikation und Expertise:
-    Obwohl das Studienteam den Nutzertest erfolgreich durchgeführt und wertvolle Daten gesammelt hat, muss hervorgehoben werden, dass sich die Interpretation der EEG-Ergebnisse außerhalb der Expertise des Teams befindet. Da das Team aus keiner ausgebildeten medizinischen oder neurowissenschaftlichen Fachkraft besteht, fehlt das notwendige Wissen, um neurologische Daten präzise zu interpretieren und verlässliche Schlussfolgerungen daraus zu ziehen. Die Analyse kann daher nur auf oberflächliche Beobachtungen und allgemeine Trends in den Daten eingehen.
-
-    In zukünftigen Studien, in denen neurologische Daten ausgewertet werden sollen, ist es von entscheidender Bedeutung, die richtige Testumgebung zu gewährleisten und die Zusammenarbeit mit qualifizierten Fachleuten in den Bereichen Neurologie und Datenanalyse sicherzustellen. Dies würde es ermöglichen, die gesammelten Daten vollständig zu nutzen und fundierte, wissenschaftliche Schlussfolgerungen zu ziehen. 
-    
-    Diese Einschränkung in Bezug auf die Qualifikation sollte nicht als Entschuldigung für ungenaue Ergebnisse angesehen werden, sondern vielmehr als Anreiz für zukünftige Projekte, bei denen eine interdisziplinäre Zusammenarbeit zur Maximierung der Qualität und Aussagekraft der Forschung angestrebt wird.
-
-    Nichtsdestotrotz stellen diese Informationen eine wertvolle Ressource dar, die von qualifizierten Fachleuten in zukünftigen Projekten genutzt werden kann. Sie können als Vergleichsbasis dienen und dazu beitragen, Trends, Muster oder Abweichungen in ähnlichen Studien zu identifizieren. Dies unterstreicht die Bedeutung der Datenerfassung und -aufbewahrung, auch wenn die sofortige Analyse und Interpretation der Daten nicht möglich ist. Es wird empfohlen, zukünftige Teams und Fachleute zu ermutigen, diese Daten in ihrer Arbeit zu berücksichtigen und weiter zu erforschen.
-
-    In zukünftigen Studien, in denen neurologische Daten ausgewertet werden sollen, ist es von entscheidender Bedeutung, die richtige Testumgebung zu gewährleisten und die Zusammenarbeit mit qualifizierten Fachleuten in den Bereichen Neurologie und Datenanalyse sicherzustellen. Dies würde es ermöglichen, die gesammelten Daten vollständig zu nutzen und fundierte, wissenschaftliche Schlussfolgerungen zu ziehen.
-
-    Diese Einschränkung in Bezug auf die Qualifikation sollte nicht als Entschuldigung für ungenaue Ergebnisse angesehen werden, sondern vielmehr als Anreiz für zukünftige Projekte, bei denen eine interdisziplinäre Zusammenarbeit zur Maximierung der Qualität und Aussagekraft der Forschung angestrebt wird.
-
-    Nichtsdestotrotz stellen diese Informationen eine wertvolle Ressource dar, die von qualifizierten Fachleuten in zukünftigen Projekten genutzt werden kann. Sie können als Vergleichsbasis dienen und dazu beitragen, Trends, Muster oder Abweichungen in ähnlichen Studien zu identifizieren. Dies unterstreicht die Bedeutung der Datenerfassung und -aufbewahrung, auch wenn die sofortige Analyse und Interpretation der Daten nicht möglich ist. Es wird empfohlen, zukünftige Teams und Fachleute zu ermutigen, diese Daten in ihrer Arbeit zu berücksichtigen und weiter zu erforschen.
-
-    Es wird empfohlen, dass zukünftige Studien diese Einschränkungen berücksichtigen und gegebenenfalls weitere Untersuchungen durchführen, um die Auswirkungen dieser Faktoren auf die Ergebnisse zur Erkennung von potentiellem Stress durch den Akkomodations-Vergenz Konflikt zu minimieren.
-\end{myitemize}
-
 \subsection{Analyse}
 Für die Analyse der Daten werden folgende Bandbreiten der EEG-Wellen betrachtet:
 \begin{myitemize}
@@ -229,6 +203,35 @@ Die analysierten EEG-Daten der Probanden zeigen ein Muster in Bezug auf die Ver�
 Bei den meisten Probanden zeigt sich eine leichte Erhöhung der Alpha-Aktivität im frontalen Gesichtsbereich im zweiten Zeitabschnitt.In einigen Fällen nehmen die Alpha-Wellen im dritten Zeitabschnitt wieder ab und kehren zu einem Zustand ähnlich dem Ausgangsniveau zurück. Die Beta-Aktivität zeigt im mittleren Zeitabschnitt bei den meisten Probanden eine leichte Erhöhung, die sich jedoch im dritten Zeitabschnitt wieder reduziert. Es gibt auch Fälle, in denen die Beta-Aktivität am Ende wieder auf das Ausgangsniveau zurückkehrt. Die Theta-Wellen zeigen bei den meisten Probanden eine kontinuierliche Abnahme über alle drei Zeitintervalle.
 
 [Hier kommen die BEschreibungen der 5 3D-Maps rein plus die T-Test und die Box-Plots von Lukas und Patrick]
+
+\section{Diskussion}
+\subsection{Limitationen}
+Diese Einschränkungen sollten bei der Interpretation der Ergebnisse berücksichtigt werden:
+
+\begin{myitemize}
+	\item Unerfahrenheit mit EEG Technologie: Unser Team bestand aus fünf Studenten, die alle unerfahren im Umgang mit EEG-Technologien waren. Es wurde eine Einführung in das richtige Anlegen der Kappe, sowie Brille durchgeführt. Dennoch führte diese Unerfahrenheit zu Herausforderungen beim korrekten Anlegen der EEG-Elektroden bei einigen Probanden, insbesondere wenn diese bereits ein VR-Headset trugen. Dies könnte sich auf die Qualität der EEG-Signale ausgewirkt haben.
+	\item Probandenauswahl: Die Anzahl der verfügbaren Probanden war begrenzt und es musste sicher gestellt werden, dass die ausgewählten Teilnehmer sowohl die erforderlichen Kriterien für unsere Forschungsfrage erfüllten als auch bereit waren, an den Probentests teilzunehmen.
+	\item Stichprobengröße: Aufgrund der begrenzten Ressourcen und der Zeitbeschränkung konnte die Stichprobengröße nicht so groß sein, wie es für eine umfassendere Studie wünschenswert gewesen wäre. Eine größere Stichprobe hätte möglicherweise genauere und repräsentativere Ergebnisse erbracht.
+	\item Beschränkungen der VR-Technologie: Bei Probanden mit kleineren Köpfen war es schwierig, das EEG richtig aufzusetzen, da das VR Headset zu viel Platz in der Stirnregion wegnahm. Dies beeinträchtigte möglicherweise die Platzierung der Elektroden und die Qualität der EEG-Signale.
+	\item Mangelnde Erfahrung mit der verwendeten Software: Die Analyse der EEG-Daten erforderte den Einsatz spezifischer Software. Da innerhalb der Forschungsgruppe keine Erfahrung im Umgang mit der Analysesoftware bestand, musste zur Auswertung Recherche betrieben werden. Diese fehlende Erfahrung verlangsamte den Analyseprozess und erhöht das Potenzial für Fehler.
+    \item Einschränkungen in Bezug auf Qualifikation und Expertise:
+    Obwohl das Studienteam den Nutzertest erfolgreich durchgeführt und wertvolle Daten gesammelt hat, muss hervorgehoben werden, dass sich die Interpretation der EEG-Ergebnisse außerhalb der Expertise des Teams befindet. Da das Team aus keiner ausgebildeten medizinischen oder neurowissenschaftlichen Fachkraft besteht, fehlt das notwendige Wissen, um neurologische Daten präzise zu interpretieren und verlässliche Schlussfolgerungen daraus zu ziehen. Die Analyse kann daher nur auf oberflächliche Beobachtungen und allgemeine Trends in den Daten eingehen.
+
+    In zukünftigen Studien, in denen neurologische Daten ausgewertet werden sollen, ist es von entscheidender Bedeutung, die richtige Testumgebung zu gewährleisten und die Zusammenarbeit mit qualifizierten Fachleuten in den Bereichen Neurologie und Datenanalyse sicherzustellen. Dies würde es ermöglichen, die gesammelten Daten vollständig zu nutzen und fundierte, wissenschaftliche Schlussfolgerungen zu ziehen. 
+    
+    Diese Einschränkung in Bezug auf die Qualifikation sollte nicht als Entschuldigung für ungenaue Ergebnisse angesehen werden, sondern vielmehr als Anreiz für zukünftige Projekte, bei denen eine interdisziplinäre Zusammenarbeit zur Maximierung der Qualität und Aussagekraft der Forschung angestrebt wird.
+
+    Nichtsdestotrotz stellen diese Informationen eine wertvolle Ressource dar, die von qualifizierten Fachleuten in zukünftigen Projekten genutzt werden kann. Sie können als Vergleichsbasis dienen und dazu beitragen, Trends, Muster oder Abweichungen in ähnlichen Studien zu identifizieren. Dies unterstreicht die Bedeutung der Datenerfassung und -aufbewahrung, auch wenn die sofortige Analyse und Interpretation der Daten nicht möglich ist. Es wird empfohlen, zukünftige Teams und Fachleute zu ermutigen, diese Daten in ihrer Arbeit zu berücksichtigen und weiter zu erforschen.
+
+    In zukünftigen Studien, in denen neurologische Daten ausgewertet werden sollen, ist es von entscheidender Bedeutung, die richtige Testumgebung zu gewährleisten und die Zusammenarbeit mit qualifizierten Fachleuten in den Bereichen Neurologie und Datenanalyse sicherzustellen. Dies würde es ermöglichen, die gesammelten Daten vollständig zu nutzen und fundierte, wissenschaftliche Schlussfolgerungen zu ziehen.
+
+    Diese Einschränkung in Bezug auf die Qualifikation sollte nicht als Entschuldigung für ungenaue Ergebnisse angesehen werden, sondern vielmehr als Anreiz für zukünftige Projekte, bei denen eine interdisziplinäre Zusammenarbeit zur Maximierung der Qualität und Aussagekraft der Forschung angestrebt wird.
+
+    Nichtsdestotrotz stellen diese Informationen eine wertvolle Ressource dar, die von qualifizierten Fachleuten in zukünftigen Projekten genutzt werden kann. Sie können als Vergleichsbasis dienen und dazu beitragen, Trends, Muster oder Abweichungen in ähnlichen Studien zu identifizieren. Dies unterstreicht die Bedeutung der Datenerfassung und -aufbewahrung, auch wenn die sofortige Analyse und Interpretation der Daten nicht möglich ist. Es wird empfohlen, zukünftige Teams und Fachleute zu ermutigen, diese Daten in ihrer Arbeit zu berücksichtigen und weiter zu erforschen.
+
+    Es wird empfohlen, dass zukünftige Studien diese Einschränkungen berücksichtigen und gegebenenfalls weitere Untersuchungen durchführen, um die Auswirkungen dieser Faktoren auf die Ergebnisse zur Erkennung von potentiellem Stress durch den Akkomodations-Vergenz Konflikt zu minimieren.
+\end{myitemize}
+
 
 \begin{thebibliography}{00}
 \bibitem{b1} J. Frey, L. Pommereau, F. Lotte und M. Hachet, 'Assessing the zone of comfort in stereoscopic displays using EEG', ACM SIGCHI Conference on Human Factors in Computing Systems (S. 2041–2046. doi: 10.1145/2559206.2581191. [Online]. Verfügbar unter: https://arxiv.org/pdf/1404.6222)
