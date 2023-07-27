@@ -116,7 +116,30 @@ Für das Experiment wurde eine Vive Pro VR-Brille \cite{b11} eingesetzt. Die EEG
 \subsection{Versuchsdurchführung}
 Das Experiment wurde in den Räumlichkeiten der Hochschule Furtwangen durchgeführt. Vor Beginn des Tests wurden die Probanden nach bekannten Sehschwächen, Epilepsie oder bestehender partieller Blindheit befragt. Nachdem die Teilnehmer die Einverständniserklärung zur Datenverarbeitung und Risiken akzeptiert hatten, wurde ein Random-Dot-Test zur Erfassung des möglichen Tiefensehens durchgeführt und der interpupillare Abstand (IPD) gemessen. Anschließend füllten die Probanden einen Pre-Simulator-Sickness-Fragebogen aus. Nach dem Ausfüllen des Fragebogens wurden sie auf einen Liegestuhl gebeten. Hier wurde die VR-Brille entsprechend der gemessenen IPD eingestellt und das EEG aufgesetzt. Den Probanden wurde mitgeteilt, dass sie während des Tests starkes Zwinkern, bewusste Kopfbewegungen oder Zähneknirschen vermeiden sollten, da diese Faktoren die EEG-Messdaten beeinflussen können.
 
-Nachdem alle Geräte angelegt und kalibriert waren, wurde den Probanden eine Entspannungsszene vorgeführt. In dieser Szene war ein Würfel mit einem grünen Punkt auf seiner Oberfläche zu sehen. Diese Markierung sollte das Fokussieren des Würfels erleichtern. Nachdem der Proband mit einer Handbewegung signalisiert hatte, dass er sich in der Szene wohl fühlte, bewegte sich der Würfel langsam auf ihn zu. Der Proband sollte während dieser Phase kontinuierlich den Würfel fokussieren. Innerhalb von vier Minuten legte der Würfel in der VR eine Strecke von etwa 28 Metern zurück und stoppte in einer Entfernung von 13 Zentimetern zum Probanden. Nach einer Verweildauer von zehn Sekunden in dieser Position füllte der Proband den Post-Simulator-Sickness-Fragebogen aus.
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.2\textwidth]{assets/alter.png} \hspace{-5pt}
+	\includegraphics[width=0.2\textwidth]{assets/ipd.png} \\
+	\vspace{2pt}
+	\includegraphics[width=0.2\textwidth]{assets/randot.png} \hspace{-5pt}
+	\includegraphics[width=0.2\textwidth]{assets/ipd_mvw.png}\\
+	\caption{Demografische Daten}
+	\label{fig:Demografische Daten}
+\end{figure}
+
+Nachdem alle Geräte angelegt und kalibriert waren, wurde den Probanden eine Entspannungsszene vorgeführt. Die VR-Szene zeigt einen ruhigen Wald mit realistischen visuellen Effekten. Die Vegetation ist reichhaltig und vielfältig, mit verschiedenen Pflanzen, Blumen und Farben, die eine harmonische und beruhigende Atmosphäre schaffen. Um die Immersion in der Szene zu fördern, wurde auch auf akustische Details geachtet. Hintergrundgeräusche wie das Rauschen des Windes in den Bäumen, Vogelgesang und das leise Rascheln von Blättern unterstreichen die Authentizität der Waldatmosphäre. .In der Mitte der Szene befindet sich ein Würfel mit einem auffälligen grünen Punkt auf seiner Oberfläche. Dieser Punkt dient als visueller Fixationspunkt und soll den Probanden helfen, sich auf den Würfel zu fokussieren (siehe Abbildung \ref{fig:unity_scene}).
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.2\textwidth]{assets/00.jpg} \hspace{-5pt}
+	\includegraphics[width=0.2\textwidth]{assets/01.jpg} \\
+	\vspace{2pt}
+	\includegraphics[width=0.2\textwidth]{assets/02.jpg} \hspace{-5pt}
+	\caption{Unity Szene}
+	\label{fig:unity_scene}
+\end{figure}
+
+Nachdem der Proband mit einer Handbewegung signalisiert hatte, dass er sich in der Szene wohl fühlte, bewegte sich der Würfel langsam auf ihn zu. Der Proband sollte während dieser Phase kontinuierlich den Würfel fokussieren. Innerhalb von vier Minuten legte der Würfel in der VR eine Strecke von etwa 28 Metern zurück und stoppte in einer Entfernung von 13 Zentimetern zum Probanden. Nach einer Verweildauer von zehn Sekunden in dieser Position füllte der Proband den Post-Simulator-Sickness-Fragebogen aus.
 
 Der Stimuli des Tests ist der Würfel, welcher sich dem Probanden durchgehend in den 4 Minuten in einer konstanten Geschwindigkeit nähert. Um das Erkennen der genauen Entfernung des Würfels für den Probanden zu verhindern wurde der Würfel in seiner Skalierung verhältnismäßig zur Entfernung zum Probanden kleiner Skaliert (siehe Abbildung \ref{fig:scale_cube}). 
 \begin{figure}[ht]
@@ -141,17 +164,6 @@ Aud diesen Fourier Ergebnissen der Kapazitäten der Elektroden wurden zwei Arten
 
 \section{Ergebnisse}
 Durch die t-Test Analyse konnten keine signifikanten Ergebnisse bei allen Indikatoren des SSQ-Tests ermittelt werden. Die Nullhypothese, dass die Durchführung in der VR-Szene des Tests zu Simulator-Sickness führt musste nicht verworfen werden. Bei einem Alpha = 0.05 wurden die geringsten Werte bei Schwitzen (p = 0,052) und Erhöhter Speichelfluss (p = 0,082) festgestellt werden.\\
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=0.2\textwidth]{assets/alter.png} \hspace{-5pt}
-	\includegraphics[width=0.2\textwidth]{assets/ipd.png} \\
-	\vspace{2pt}
-	\includegraphics[width=0.2\textwidth]{assets/randot.png} \hspace{-5pt}
-	\includegraphics[width=0.2\textwidth]{assets/ipd_mvw.png}\\
-	\caption{Demografische Daten}
-	\label{fig:Demografische Daten}
-\end{figure}
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
 \begin{figure}[ht]
 	\centering
@@ -162,7 +174,6 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 	\caption{Demografische Daten 2}
 	\label{fig:Demografische Daten 2}
 \end{figure}
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
 \begin{figure}[ht]
 	\centering
@@ -174,7 +185,6 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 	\caption{Fragebogenergebnisse vorher nachher Vergleich}
 	\label{fig:Fragebogenergebnisse}
 \end{figure}
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
 \subsection{Analyse}
 Für die Analyse der Daten werden folgende Bandbreiten der EEG-Wellen betrachtet:
