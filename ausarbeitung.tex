@@ -11,8 +11,6 @@
 \usepackage[colorlinks=true,citecolor=blue]{hyperref}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
-
-\documentclass{article}
 \usepackage{enumitem}
 \usepackage{lipsum} % für Beispieltext
 
@@ -81,14 +79,15 @@ virtual reality, akkommodation-vergenz konflikt, elektroenzephalografie
 \end{IEEEkeywords}
 
 \section{Einleitung}
-“Applications of Computer Science, including digital games, virtual reality, and augmented reality [...], have enormous potential for bringing about cultural change.” \cite{b3} Nach einer Prognose von ARtillery Intelligence wird der Umsatz mit Virtual Reality weltweit von 8,3 Milliarden US-Dollar im Jahr 2021 auf 28,84 Milliarden US-Dollar im Jahr 2026 steigen. \cite{b2}\\
-VR-Brillen verwenden Stereoskopie, bei der jedem Auge durch eine horizontale Verschiebung der Bilder leicht unterschiedliche Informationen zugeführt werden. So entsteht beim Nutzer eine 3D-Wirkung der Darstellung. Durch die entstehenden Parallaxen kann die Szene den Eindruck erwecken, aus der Leinwand hervorzutreten oder dahinter zu liegen.\cite{b4}\\
+“Applications of Computer Science, including digital games, virtual reality, and augmented reality [...], have enormous potential for bringing about cultural change.”\cite{b2}\\
+VR-Brillen verwenden Stereoskopie, bei der jedem Auge durch eine horizontale Verschiebung der Bilder leicht unterschiedliche Informationen zugeführt werden. So entsteht beim Nutzer eine 3D-Wirkung der Darstellung. Durch die negativen Parallaxen kann die Szene den Eindruck erwecken, aus der Leinwand hervorzutreten oder dahinter zu liegen.\cite{b3}\\
 Die vorliegende Untersuchung konzentriert sich auf den Akkommodation-Vergenz-Konflikt. Dieser tritt insbesondere in der modernen VR-Technologie auf, da durch die Linsen der VR-Brille die Bildebene in eine weite Entfernung projiziert wird, während die Objekte in der VR durch Interaktion in greifbarer Nähe erscheinen.
-“In order to see one object, the eyeballs need to rotate accordingly. This mechanism is called the “vergence”. In a natural situation, as an object is moving closer or further, vergence matches another physiological phenomena: “accommodation”. It enables the object’s image to remain clear on the retina. It is caused by a deformation of the crystalline lens, which focuses light beams the same way camera lenses do.”\cite{b1}
+“In order to see one object, the eyeballs need to rotate accordingly. This mechanism is called the “vergence”. In a natural situation, as an object is moving closer or further, vergence matches another physiological phenomena: “accommodation”. It enables the object’s image to remain clear on the retina. It is caused by a deformation of the crystalline lens, which focuses light beams the same way camera lenses do.”\cite{b4}
 
-Einige Hirnregionen, insbesondere das Mittelhirn, sind hinsichtlich der Okulomotorik besonders relevant. Aus dem Mittelhirn verlaufen drei Hirnnerven zu den Augen, wobei der N. oculomotorius unter anderem auch für die Akkommodation des Auges verantwortlich ist \cite{b6}. Eine besondere Herausforderung ist die Bestimmung, ob die gemessenen EEG-Werte tatsächlich auf den Akkommodation-Vergenz-Konflikt zurückzuführen sind. Denn während des Sehvorgangs werden verschiedene Gehirnregionen aktiviert, darunter die primäre Sehrinde im hinteren Hauptlappen der Großhirnrinde, der Scheitellappen zur Lokalisierung von Objekten und der Schläfenlappen zur Objekterkennung \cite{b8}. Letztlich könnte der primäre sensorische Kortex, insbesondere die von Wilder Penfield identifizierten Bereiche, durch starke Werte aufzeigen, ob der Akkommodation-Vergenz-Konflikt im EEG nachweisbar ist \cite{b7}.
+Einige Hirnregionen, insbesondere das Mittelhirn, sind hinsichtlich der Okulomotorik besonders relevant. Aus dem Mittelhirn verlaufen drei Hirnnerven zu den Augen, wobei der N. oculomotorius unter anderem auch für die Akkommodation des Auges verantwortlich ist \cite{b5}. Eine besondere Herausforderung ist die Bestimmung, ob die gemessenen EEG-Werte tatsächlich auf den Akkommodation-Vergenz-Konflikt zurückzuführen sind. Denn während des Sehvorgangs werden verschiedene Gehirnregionen aktiviert, darunter die primäre Sehrinde im hinteren Hauptlappen der Großhirnrinde, der Scheitellappen zur Lokalisierung von Objekten und der Schläfenlappen zur Objekterkennung \cite{b6}. Letztlich könnte der primäre sensorische Kortex, insbesondere die von Wilder Penfield identifizierten Bereiche, durch starke Werte aufzeigen, ob der Akkommodation-Vergenz-Konflikt im EEG nachweisbar ist \cite{b7}.
 
-Ziel dieser Untersuchung ist es zu ermitteln, ob mögliche Probleme in Anwendungen, die im kritischen Bereich des Akkommodations-Vergenz-Konflikts arbeiten, mittels EEG nachweisbar sind. Damit könnte zukünftige Forschung gezielter auf diesen Bereich ausgerichtet werden.
+Ziel dieser Untersuchung ist es zu ermitteln, ob mögliche Probleme in Anwendungen, die im kritischen Bereich des Akkommodations-Vergenz-Konflikts arbeiten, mittels EEG nachweisbar sind. Damit könnte zukünftige Forschung gezielter auf diesen Bereich ausgerichtet werden \cite{b8}.\\
+Dieses Forschungsgebiet ist von großer Bedeutung, da VR-Technoligien zunehmend in verschiendenen Bereichen wie Gaming, Bildung, Gesundheitswesen und Industrie eingesetzt werden und ein besseres Verständnis des Akkommodation-Vergenz-Konflikt dazu beitragen kann, die zukünftige Entwicklung von VR-Anwendungen zu verbessern.
 
 \section{Related Work}
 \subsection{Assessing the zone of comfort in stereoscopic displays using EEG}
@@ -125,7 +124,11 @@ Die Durchführung des Experiments dauerte insgesamt etwa 25 bis 50 Minuten. Sieb
 Die mit Google Forms gesammelten Daten konnten als CSV-Dateien heruntergeladen werden. Diese Daten wurden dann in Excel weiterverarbeitet. Die demografischen Daten wurden als Kreisdiagramme (Fig 2) und Boxplots dargestellt (Fig 1).\\
 Die Ergebnisse des Simulator-Sickness-Fragebogens (SSQ) wurden im Vorher-Nachher-Vergleich als Boxplots gegenübergestellt (Fig 3).\\
 Um eine mögliche Signifikanz der Vorher- und Nachher Ergebnisse der SSQ Ergebnisse zu ermitteln wurde in Excel ein einseitiger t-Test durchgeführt.\\ 
-!! Nick hier seinen Teil !!
+Die Ergebnisse des EEGs wurden mit den ermittelten Abständen aus Unity zusammengeführt. Das bedeutet, dass ermittelt wurde, welcher Abstand des Würfels zum Probanden zu welchem Messzeitpunkt des EEGs gehört. Die Messungen des EEGs konnten somit in 3 Abschnitte eingeteilt werden. Der Erste Abschnitt war der Zeitraum vom Start des Würfels als er sich angefangen hat zu bewegen bis 150 cm von dem Probanden entfernt. Der zweite Abschnitt war der Abstand von 150 cm bis 30 cm, in welchem der Akkommodation-Vergenzkonflikt auftritt. Der dritte Abschnitt ist von 30 cm bis ca. 15 cm vor dem Probanden. Hier kann es sogar zum Schielen beim Probanden kommen.
+
+Auf die drei Abschnitte wurde die Fourier-Analyse angewandt. Die letzten beiden Abschnitte sind beide ca. 8 Sekunden lang, weswegen vom ersten Abschnitt ebenfalls 8 Sekunden gemessen und analysiert wurden.
+Aud diesen Fourier Ergebnissen der Kapazitäten der Elektroden wurden zwei Arten der Analyse durchgeführt. Einerseits wurden aus der Besa Software Bilder generiert zu Alpha, Beta und Theta Wellen welche visuell verglichen wurden. Andererseits wurden die Kapazitäten der Elektroden der verschiedenen Wellenlängen in Excel analysiert. Hierfür wurden die Daten übertragen und die Differenzen der jeweiligen Elektroden beim gleichen Probanden in den Wellenlängen ermittelt. Die Differenzen wurden im Vergleich zu ersten Abschnitt mit dem zweiten, dem zweiten und dem letzten und dem ersten mit dem letzten abschnitt gebildet. Diese Differenzen wurden über einen einseitigen abhängigen t-Test analysiert und in Boxplots grafisch dargestellt.
+
 
 \section{Ergebnisse}
 Durch die t-Test Analyse konnten keine signifikanten Ergebnisse bei allen Indikatoren des SSQ-Tests ermittelt werden. Die Nullhypothese, dass die Durchführung in der VR-Szene des Tests zu Simulator-Sickness führt musste nicht verworfen werden. Bei einem Alpha = 0.05 wurden die geringsten Werte bei Schwitzen (p = 0,052) und Erhöhter Speichelfluss (p = 0,082) festgestellt werden.\\
@@ -212,13 +215,11 @@ Die Analyse unterscheidet zudem drei Intervalle, die sich auf die Entfernung des
     \item Drittes Intervall: Das Objekt befindet sich in einer Entfernung zwischen 0,3 und 0,15 Metern, was einer Dauer von etwa 15 bis 24 Sekunden entspricht.
 \end{myitemize}
 
+Die Analyse der Daten beschränkt sich hierbei auf die Beschreibung von Auffälligkeiten innerhalb der gemessenen EEG Daten in Form einer FFT (Fast Fourier Transform) und einem 3D-Mapping von sowohl der gesamten Gehirnwellen Typen als auch der einzelnen Typen im Verhältnis zu unseren 3 Zeitintervallen. Stichprobenhaft wurden dafür 5 Datensätze aus den 17 Probandentests ausgewählt. 
 
-\end{myitemize}
-\subsection{Bemerkungen}
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
-\section{Schlussfolgerung}
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+\subsection{Beschreibung}
+Hier kommen die BEschreibungen der 5 3D-Maps rein plus die T-Test und die Box-Plots von Lukas und Patrick
 
 \begin{thebibliography}{00}
 \bibitem{b1} J. Frey, L. Pommereau, F. Lotte und M. Hachet, 'Assessing the zone of comfort in stereoscopic displays using EEG', ACM SIGCHI Conference on Human Factors in Computing Systems (S. 2041–2046. doi: 10.1145/2559206.2581191. [Online]. Verfügbar unter: https://arxiv.org/pdf/1404.6222)
