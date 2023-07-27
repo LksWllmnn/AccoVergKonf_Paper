@@ -71,9 +71,13 @@
 \maketitle
 
 \begin{abstract}
-This document is a model and instructions for \LaTeX.
-This and the IEEEtran.cls file define the components of your paper [title, text, heads, etc.]. *CRITICAL: Do Not Use Symbols, Special Characters, Footnotes, 
-or Math in Paper Title or Abstract.
+In dieser Studie untersuchten wir die Auswirkungen des Akkommodation-Vergenz-Konflikts (AVK) auf die Gehirnaktivität, die mit Elektroenzephalographie (EEG) gemessen wurde. Der AVK entsteht durch die Inkonsistenz zwischen der Akkommodation, der Anpassung des Auges an unterschiedliche Entfernungen, und der Vergenz, der Ausrichtung der beiden Augen auf dasselbe Objekt. Der Konflikt tritt besonders in virtuellen und erweiterten Realitätsszenarien auf und kann zu visueller Ermüdung und Desorientierung führen.
+
+In unserer Studie führten wir Probandentests mittels einer speziell entworfenen virtuellen Szene durch, um den AVK zu induzieren und seine Auswirkungen auf die Gehirnaktivität zu messen. Den Probanden wurde in einer Entspannungsszene ein Würfel zur Fokussierung präsentiert, der sich kontinuierlich auf sie zubewegte. Die daraufhin erhobenen EEG-Daten wurden analysiert, um spezifische Muster zu identifizieren.
+
+Unsere vorläufigen Ergebnisse zeigen signifikante Veränderungen in den EEG-Signalen. Insbesondere stellten wir eine Zunahme sowohl der Alpha- als auch der Beta-Wellen fest. Diese Beobachtungen stützen die Hypothese, dass der AVK eine messbare Auswirkung auf die Gehirnaktivität hat und somit ein maßgeblicher Faktor für das Auftreten von Symptomen wie Desorientierung und Unbehagen in virtuellen Umgebungen sein könnte.
+
+Diese Ergebnisse haben wichtige Implikationen für die Gestaltung von virtuellen und erweiterten Realitätssystemen. Weitere Forschung ist notwendig, um die genauen Mechanismen des AVK besser zu verstehen.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -111,7 +115,7 @@ Auch hier können die EEG-Ergebnisse mit unseren Ergebnissen verglichen werden. 
 
 \section{Methodik}
 \subsection{Material}
-Für das Experiment wurde eine Vive Pro VR-Brille \cite{b11} eingesetzt. Die EEG-Messung wurde mit dem DSI-24 von Neurospec durchgeführt, einem Einem Dry Sensor Interface \cite{b9}. Für die Erfassung der Antworten im SSQ und der allgemeinen Daten wurden die Fragebögen mit Google Forms erstellt. Um den Datenschutz zu gewährleisten, wurden zur Zuordnung der Daten anonyme Codes verwendet und es wurden keine personenbezogenen Daten der Teilnehmer online gespeichert. Die Auswertung der EEG-Daten erfolgte mit der Software "BESA Research" von BESA \cite{b10}. Die Entspannungsszene, in der sich der Teilnehmer während des Experiments befand, wurde von einer vorherigen Forschungsgruppe in Unity entwickelt. Diese konnte Ergebnisse erzielen, die auf eine positive Wirkung auf die Entspannung der Nutzer hinweisen. Anpassungen für dieses Experiment und die Durchführung des Experiments wurden ebenfalls in Unity vorgenommen.
+Für das Experiment wurde eine Vive Pro VR-Brille \cite{b11} eingesetzt. Die EEG-Messung wurde mit dem DSI-24 von Neurospec durchgeführt, einem Einem Dry Sensor Interface \cite{b9}. Für die Erfassung der Antworten im SSQ und der allgemeinen Daten wurden die Fragebögen mit Google Forms erstellt. Um den Datenschutz zu gewährleisten, wurden zur Zuordnung der Daten anonyme Codes verwendet und es wurden keine personenbezogenen Daten der Teilnehmer online gespeichert. Die Auswertung der EEG-Daten erfolgte mit der Software "BESA Research" von BESA \cite{b10}. Die Entspannungsszene, in der sich der Teilnehmer während des Experiments befand, wurde von einer vorherigen Forschungsgruppe in Unity entwickelt cite{b12}. Diese konnte Ergebnisse erzielen, die auf eine positive Wirkung auf die Entspannung der Nutzer hinweisen. Anpassungen für dieses Experiment und die Durchführung des Experiments wurden ebenfalls in Unity vorgenommen.
 
 \subsection{Versuchsdurchführung}
 Das Experiment wurde in den Räumlichkeiten der Hochschule Furtwangen durchgeführt. Vor Beginn des Tests wurden die Probanden nach bekannten Sehschwächen, Epilepsie oder bestehender partieller Blindheit befragt. Nachdem die Teilnehmer die Einverständniserklärung zur Datenverarbeitung und Risiken akzeptiert hatten, wurde ein Random-Dot-Test zur Erfassung des möglichen Tiefensehens durchgeführt und der interpupillare Abstand (IPD) gemessen. Anschließend füllten die Probanden einen Pre-Simulator-Sickness-Fragebogen aus. Nach dem Ausfüllen des Fragebogens wurden sie auf einen Liegestuhl gebeten. Hier wurde die VR-Brille entsprechend der gemessenen IPD eingestellt und das EEG aufgesetzt. Den Probanden wurde mitgeteilt, dass sie während des Tests starkes Zwinkern, bewusste Kopfbewegungen oder Zähneknirschen vermeiden sollten, da diese Faktoren die EEG-Messdaten beeinflussen können.
@@ -137,7 +141,7 @@ Das Experiment wurde in den Räumlichkeiten der Hochschule Furtwangen durchgefü
 	\label{fig:Demografische Daten 2}
 \end{figure}
 
-Nachdem alle Geräte angelegt und kalibriert waren, wurde den Probanden eine Entspannungsszene vorgeführt. Die VR-Szene zeigt einen ruhigen Wald mit realistischen visuellen Effekten. Die Vegetation ist reichhaltig und vielfältig, mit verschiedenen Pflanzen, Blumen und Farben, die eine harmonische und beruhigende Atmosphäre schaffen. Um die Immersion in der Szene zu fördern, wurde auch auf akustische Details geachtet. Hintergrundgeräusche wie das Rauschen des Windes in den Bäumen, Vogelgesang und das leise Rascheln von Blättern unterstreichen die Authentizität der Waldatmosphäre. .In der Mitte der Szene befindet sich ein Würfel mit einem auffälligen grünen Punkt auf seiner Oberfläche. Dieser Punkt dient als visueller Fixationspunkt und soll den Probanden helfen, sich auf den Würfel zu fokussieren (siehe Abbildung \ref{fig:unity_scene}).
+Nachdem alle Geräte angelegt und kalibriert waren, wurde den Probanden eine Entspannungsszene vorgeführt \cite{b12}. Die VR-Szene zeigt einen ruhigen Wald mit realistischen visuellen Effekten. Die Vegetation ist reichhaltig und vielfältig, mit verschiedenen Pflanzen, Blumen und Farben, die eine harmonische und beruhigende Atmosphäre schaffen. Um die Immersion in der Szene zu fördern, wurde auch auf akustische Details geachtet. Hintergrundgeräusche wie das Rauschen des Windes in den Bäumen, Vogelgesang und das leise Rascheln von Blättern unterstreichen die Authentizität der Waldatmosphäre. .In der Mitte der Szene befindet sich ein Würfel mit einem auffälligen grünen Punkt auf seiner Oberfläche. Dieser Punkt dient als visueller Fixationspunkt und soll den Probanden helfen, sich auf den Würfel zu fokussieren (siehe Abbildung \ref{fig:unity_scene}).
 
 \begin{figure}[ht]
 	\centering
@@ -161,6 +165,17 @@ Der Stimuli des Tests ist der Würfel, welcher sich dem Probanden durchgehend in
 Durch die Entfernung dieser monokularen Tiefeninformation soll das Annähern des Würfels eine mögliche bedrohliche Wirkung auf den Probanden verringern. In der Szene wurde ein Bereich gewählt in welchem möglichst wenig Bäume  vorhanden sind, damit es beim Probanden nicht zu Problemen der Fixationsdisparitäten kommt.
 
 Die Durchführung des Experiments dauerte insgesamt etwa 25 bis 50 Minuten. Sieben bis zehn Minuten davon wurden für die Einführung und die Fragebögen benötigt, fünf Minuten für die Zeit in der VR und etwa 10 bis 35 Minuten für das Anlegen und Kalibrieren des EEGs. 
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.2\textwidth]{assets/probandentest_00.jpg} \hspace{-5pt}
+	\includegraphics[width=0.2\textwidth]{assets/probandentest_01.jpg} \\
+	\vspace{2pt}
+	\includegraphics[width=0.2\textwidth]{assets/probandentest_02.jpg} \hspace{-5pt}
+	\includegraphics[width=0.2\textwidth]{assets/probandentest_03.jpg} \hspace{-5pt}
+	\caption{Aufbaue Probandentest}
+	\label{fig:structure_probandentest}
+\end{figure}
 
 \subsection{Datenerhebung und Verarbeitung}
 Die mit Google Forms gesammelten Daten konnten als CSV-Dateien heruntergeladen werden. Diese Daten wurden dann in Excel weiterverarbeitet. Die demografischen Daten wurden als Kreisdiagramme (Fig 2) und Boxplots dargestellt (Fig 1).\\
@@ -224,7 +239,6 @@ Die analysierten EEG-Daten der Probanden zeigen ein Muster in Bezug auf die Ver�
 Bei den meisten Probanden zeigt sich eine leichte Erhöhung der Alpha-Aktivität im frontalen Gesichtsbereich im zweiten Zeitabschnitt.In einigen Fällen nehmen die Alpha-Wellen im dritten Zeitabschnitt wieder ab und kehren zu einem Zustand ähnlich dem Ausgangsniveau zurück. Die Beta-Aktivität zeigt im mittleren Zeitabschnitt bei den meisten Probanden eine leichte Erhöhung, die sich jedoch im dritten Zeitabschnitt wieder reduziert. Es gibt auch Fälle, in denen die Beta-Aktivität am Ende wieder auf das Ausgangsniveau zurückkehrt. Die Theta-Wellen zeigen bei den meisten Probanden eine kontinuierliche Abnahme über alle drei Zeitintervalle.
 
 \subsubsection{Auswertung der EEG-Messdaten t-Tests}
-
 Es wurde hierbei die selbe Stichprobe von 5 Nutzertests ausgewählt.
 
 Durch die Boxplots der Differenzen der Zeiträume ist ein allgemeiner Aufwärtstrend bei sämtlichen Wellenlängen über den Ablauf des Experiments zu erkennen. Signifikante Veränderungen der Theta-Wellen treten hierbei vor allem bei den Messungen der hinteren Elektroden auf. Bei den vorderen Elektroden konnten durch die T-Tests signifikante Veränderungen im Alpha-Wellenbereich bei den Elektroden F8, FZ und A1 gemessen werden. Signifikante Veränderungen der Beta-Wellen konnten bei diversen Elektroden im vorderen und hinteren Bereich der Elektroden festgestellt werden. Die meisten signifikanten Veränderungen zwischen den Zeitabschnitten wurden bei der Elektrode T8 mit den durch die T-Tests der Differenzen festgestellt. Hierbei sind auch in den Boxplots klare Unterschiede zwischen den Differenzen des Start und Mitte Abschnitts im Vergleich zu den anderen beiden Differenzgruppen in beiden Wellenlängen (Theta und Beta) zu erkennen (siehe Abbildung \ref{fig:auswertung_t_test_eeg}).
@@ -267,6 +281,12 @@ Diese Einschränkungen sollten bei der Interpretation der Ergebnisse berücksich
     Es wird empfohlen, dass zukünftige Studien diese Einschränkungen berücksichtigen und gegebenenfalls weitere Untersuchungen durchführen, um die Auswirkungen dieser Faktoren auf die Ergebnisse zur Erkennung von potentiellem Stress durch den Akkomodations-Vergenz Konflikt zu minimieren.
 \end{myitemize}
 
+\section{Schlussfolgerung}
+
+\section{Ausblick}
+
+
+\newpage
 
 \begin{thebibliography}{00}
 \bibitem{b1} J. Frey, L. Pommereau, F. Lotte und M. Hachet, 'Assessing the zone of comfort in stereoscopic displays using EEG', ACM SIGCHI Conference on Human Factors in Computing Systems (S. 2041–2046. doi: 10.1145/2559206.2581191. [Online]. Verfügbar unter: https://arxiv.org/pdf/1404.6222)
@@ -288,11 +308,7 @@ Diese Einschränkungen sollten bei der Interpretation der Ergebnisse berücksich
 \bibitem{b9}Wearable Sensing | Dry EEG. DSI-24. Zugegriffen 12. Juli 2023. https://wearablesensing.com/dsi-24/.
 \bibitem{b10}BESA® | Brain Electrical Source Analysis: BESA Research > Besa Research 7.1. Zugegriffen 12. Juli 2023. https://www.besa.de/home/downloads/besa-research/besa-research-7-1/.
 \bibitem{b11}The professional-grade VR headset | VIVE Pro Deutschland. Zugegriffen 12. Juli 2023. https://www.vive.com/de/product/vive-pro/.
-
+\bibitem{b12}D. M. Alka, L. Keck, M. Schürmann, J. Nechypurenko, L. Kahn und I. Orengo, „Headset-related stress in VR : A pilot study and methodologically approach,“ Hochschule Furtwangen, 2022. [Online]. Verfügbar unter: https://opus.hs-furtwangen.de/frontdoor/index/index/start/0/rows/10/sortfield/score/sortorder/desc/searchtype/simple/query/Headset-related+stress+in+VR/docId/8489
 
 \end{thebibliography}
-\vspace{12pt}
-\color{red}
-IEEE conference templates contain guidance text for composing and formatting conference papers. Please ensure that all template text is removed from your conference paper prior to submission to the conference. Failure to remove the template text from your paper may result in your paper not being published.
-
 \end{document}
