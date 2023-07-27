@@ -28,7 +28,7 @@
 
 \begin{document}
 
-\title{Untersuchung der Nachweisbarkeit des Akkommodation-Vergenzkonflikts in einem EEG in einer VR entspannungs Szene\\
+\title{Untersuchung der Nachweisbarkeit des Akkommodation-Vergenz-Konflikts in einem EEG in einer VR Entspannungsszene\\
 \thanks{HFU Furtwangen}
 }
 
@@ -107,7 +107,7 @@ In unserem Versuch können wir unsere EEG-Ergebnisse mit den Ergebnissen dieser 
 
 
 \subsection{Study of Electroencephalography-based Objective Stereoscopic Visual Fatigue Evaluation}
-In der Studie "\textnormal{Untersuchung} der elektroenzephalographiebasierten objektiven stereoskopischen visuellen Ermüdungsbewertung" \cite{b5} wird der Zusammenhang zwischen visueller Ermüdung durch den Akkommodations-Vergenz-Konflikt bei 3D-Displays mittels EEG-Messung hergestellt.
+In der Studie "\textnormal{Study} of Electroencephalography-based Objective Stereoscopic Visual Fatigue Evaluation" \cite{b5} wird der Zusammenhang zwischen visueller Ermüdung durch den Akkommodations-Vergenz-Konflikt bei 3D-Displays mittels EEG-Messung hergestellt.
 Das Experiment wurde mit elf Studenten durchgeführt. Sie wurden gebeten, auf einem Random Dot Stereogramm festzustellen, in welche Richtung ein abgebildeter Pfeil zeigt. Es gab eine Übungszeit von fünf Minuten, gefolgt von sieben Testläufen à zehn Minuten.
 Die Forscher konnten einen stärkeren Anstieg der Alpha-Wellen im Frontalbereich des Gehirns über die Dauer des Experiments feststellen. Die Aktivität der Beta-Wellen stieg ebenfalls an, jedoch nicht so stark wie die der Alpha-Wellen. Die Forscher stellten fest, dass die Art der Aufgabe auch Einfluss auf die Aktivitäten der Wellen haben könnte. Sie schlussfolgern, dass ihr Befund der erhöhten Alpha-Wellen-Aktivität im Frontallappen ein Indikator für visuelle Ermüdung sein könnte.
 Auch hier können die EEG-Ergebnisse mit unseren Ergebnissen verglichen werden. Aufgrund der Beschreibung des Versuchsaufbaus ist jedoch unklar, wie stark der Akkommodations-Vergenz-Konflikt in diesem Experiment ausgelöst wurde. Es ist auch zu beachten, dass ein Random Dot Stereogramm auf einem 3D-Display sehr unterschiedliche Ergebnisse liefern kann im Vergleich zu einer komplexen 3D-Szene auf einem VR-Headset.
@@ -180,15 +180,15 @@ Die Durchführung des Experiments dauerte insgesamt etwa 25 bis 50 Minuten. Sieb
 \subsection{Datenerhebung und Verarbeitung}
 Die mit Google Forms gesammelten Daten konnten als CSV-Dateien heruntergeladen werden. Diese Daten wurden dann in Excel weiterverarbeitet. Die demografischen Daten wurden als Kreisdiagramme (Abbildung 2) und Boxplots dargestellt (Abbildung 1).\\
 Die Ergebnisse des Simulator-Sickness-Fragebogens (SSQ) wurden im Vorher-Nachher-Vergleich als Boxplots gegenübergestellt (Abbildung 3).\\
-Um eine mögliche Signifikanz der Vorher- und Nachher Ergebnisse der SSQ Ergebnisse zu ermitteln wurde in Excel ein einseitiger t-Test durchgeführt.\\ 
-Die Ergebnisse des EEGs wurden mit den ermittelten Abständen aus Unity zusammengeführt. Das bedeutet, dass ermittelt wurde, welcher Abstand des Würfels zum Probanden zu welchem Messzeitpunkt des EEGs gehört. Die Messungen des EEGs konnten somit in drei Abschnitte eingeteilt werden. Der Erste Abschnitt war der Zeitraum vom Start des Würfels als er sich angefangen hat zu bewegen bis 150 cm von dem Probanden entfernt. Der zweite Abschnitt war der Abstand von 150 cm bis 30 cm, in welchem der Akkommodation-Vergenzkonflikt auftritt. Der dritte Abschnitt ist von 30 cm bis ca. 15 cm vor dem Probanden. Hier kann es sogar zum Schielen beim Probanden kommen.
+Um eine mögliche Signifikanz der Vorher- und Nachher-Ergebnisse der SSQ Ergebnisse zu ermitteln, wurde in Excel ein einseitiger t-Test durchgeführt.\\ 
+Die Ergebnisse des EEGs wurden mit den ermittelten Abständen aus Unity zusammengeführt. Das bedeutet, dass ermittelt wurde, welcher Abstand des Würfels zum Probanden zu welchem Messzeitpunkt des EEGs gehört. Die Messungen des EEGs konnten somit in drei Abschnitte eingeteilt werden. Der Erste Abschnitt war der Zeitraum vom Start des Würfels als er sich angefangen hat zu bewegen, bis 150 cm von dem Probanden entfernt. Der zweite Abschnitt war der Abstand von 150 cm bis 30 cm, in welchem der AVK auftritt. Der dritte Abschnitt ist von 30 cm bis ca. 15 cm vor dem Probanden. Hier kann es sogar zum Schielen beim Probanden kommen.
 
 Auf die drei Abschnitte wurde die Fourier-Analyse angewandt. Die letzten beiden Abschnitte sind beide ca. 8 Sekunden lang, weswegen vom ersten Abschnitt ebenfalls 8 Sekunden gemessen und analysiert wurden.
-Auf diesen Fourier Ergebnissen der Kapazitäten der Elektroden wurden zwei Arten der Analyse durchgeführt. Einerseits wurden aus der BESA Software 3D Maps der Alpha-, Beta- und Theta-Wellen generiert, um diese visuell vergleichen zu können. Andererseits wurden die Kapazitäten der Elektroden der verschiedenen Wellenlängen in Excel analysiert. Hierfür wurden die Daten übertragen und die Differenzen der jeweiligen Elektroden beim gleichen Probanden in den Wellenlängen ermittelt. Die Differenzen wurden im Vergleich zu ersten Abschnitt mit dem zweiten, dem zweiten und dem letzten und dem ersten mit dem letzten Abschnitt gebildet. Diese Differenzen wurden über einen einseitigen abhängigen t-Test analysiert und in Boxplots grafisch dargestellt.
+Auf diese Fourier Ergebnisse der Kapazitäten der Elektroden wurden zwei Arten der Analyse durchgeführt. Einerseits wurden aus der BESA Software 3D Maps der Alpha-, Beta- und Theta-Wellen generiert, um diese visuell vergleichen zu können. Andererseits wurden die Kapazitäten der Elektroden der verschiedenen Wellenlängen in Excel analysiert. Hierfür wurden die Daten übertragen und die Differenzen der jeweiligen Elektroden beim gleichen Probanden in den Wellenlängen ermittelt. Die Differenzen wurden zwischen dem ersten und dem zweiten, dem zweiten und dem letzten und dem ersten mit dem letzten Abschnitt gebildet. Diese Differenzen wurden über einen einseitigen abhängigen t-Test analysiert und in Boxplots grafisch dargestellt.
 
 
 \section{Ergebnisse}
-Durch die t-Test Analyse konnten keine signifikanten Ergebnisse bei allen Indikatoren des SSQ-Tests ermittelt werden. Die Nullhypothese, dass die Durchführung in der VR-Szene des Tests zu Simulator-Sickness führt musste nicht verworfen werden. Bei einem Alpha = 0.05 wurden die geringsten Werte bei Schwitzen (p = 0,052) und Erhöhter Speichelfluss (p = 0,082) festgestellt werden. Zur letzten Frage des SSQs, ob während dem Test den Probanden etwas unangenehmes aufgefallen ist, gaben elf Personen an, dass der Würfel sehr nah kam und es somit unangenehm war diesen zu fokussieren.\\
+Durch die t-Test Analyse konnten keine signifikanten Ergebnisse bei allen Indikatoren des SSQ-Tests ermittelt werden. Die Nullhypothese, dass die Durchführung in der VR-Szene des Tests zu Simulator-Sickness führt, musste nicht verworfen werden. Bei einem Alpha = 0.05 wurden die geringsten Werte bei Schwitzen (p = 0,052) und Erhöhter Speichelfluss (p = 0,082) festgestellt werden. Zur letzten Frage des SSQs, ob während dem Test den Probanden etwas unangenehmes aufgefallen ist, gaben elf Personen an, dass der Würfel sehr nah kam und es somit unangenehm war diesen zu fokussieren.\\
 
 \begin{figure}[ht]
 	\centering
@@ -241,14 +241,21 @@ Bei den meisten Probanden zeigt sich eine leichte Erhöhung der Alpha-Aktivität
 \subsubsection{Auswertung der EEG-Messdaten t-Tests}
 Es wurde hierbei die selbe Stichprobe von fünf Nutzertests ausgewählt.
 
-Durch die Boxplots der Differenzen der Zeiträume ist ein allgemeiner Aufwärtstrend bei sämtlichen Wellenlängen über den Ablauf des Experiments zu erkennen. Signifikante Veränderungen der Theta-Wellen treten hierbei vor allem bei den Messungen der hinteren Elektroden auf. Bei den vorderen Elektroden konnten durch die T-Tests signifikante Veränderungen im Alpha-Wellenbereich bei den Elektroden F8, FZ und A1 gemessen werden. Signifikante Veränderungen der Beta-Wellen konnten bei diversen Elektroden im vorderen und hinteren Bereich der Elektroden festgestellt werden. Die meisten signifikanten Veränderungen zwischen den Zeitabschnitten wurden bei der Elektrode T8 mit den durch die T-Tests der Differenzen festgestellt. Hierbei sind auch in den Boxplots klare Unterschiede zwischen den Differenzen des Start und Mitte Abschnitts im Vergleich zu den anderen beiden Differenzgruppen in beiden Wellenlängen (Theta und Beta) zu erkennen (siehe Abbildung \ref{fig:auswertung_t_test_eeg}).
+Durch die Boxplots der Differenzen der Zeiträume ist ein allgemeiner Aufwärtstrend bei sämtlichen Wellenlängen über den Ablauf des Experiments zu erkennen. Signifikante Veränderungen der Theta-Wellen treten hierbei vor allem bei den Messungen der hinteren Elektroden auf. Bei den vorderen Elektroden konnten durch die T-Tests signifikante Veränderungen im Alpha-Wellenbereich bei den Elektroden F8, FZ und A1 gemessen werden. Signifikante Veränderungen der Beta-Wellen konnten bei diversen Elektroden im vorderen und hinteren Bereich des EEGs festgestellt werden. Die meisten signifikanten Veränderungen zwischen den Zeitabschnitten wurden bei der Elektrode T8 mit den durch die t-Tests der Differenzen festgestellt. Hierbei sind auch in den Boxplots klare Unterschiede zwischen den Differenzen des Start- und Mitte-Abschnitts im Vergleich zu den anderen beiden Differenzgruppen in beiden Wellenlängen (Theta und Beta) zu erkennen (siehe Abbildung \ref{fig:boxplots_eeg} und \ref{fig:auswertung_t_test_eeg}).
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.2\textwidth]{assets/Signifikanzen.png} \hspace{-5pt}
-	\includegraphics[width=0.2\textwidth]{assets/ThetaT8.png} \\
+	
+	\includegraphics[width=0.4\textwidth]{assets/ThetaT8.png} \\
 	\vspace{2pt}
-	\includegraphics[width=0.2\textwidth]{assets/BetaT8.png} \hspace{-5pt}
+	\includegraphics[width=0.4\textwidth]{assets/BetaT8.png} \hspace{-5pt}
+	\caption{Auswertung t-Tests EEG-Messdaten}
+	\label{fig:boxplots_eeg}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.4\textwidth]{assets/Signifikanzen.png} \hspace{-5pt}
 	\caption{Auswertung t-Tests EEG-Messdaten}
 	\label{fig:auswertung_t_test_eeg}
 \end{figure}
@@ -286,9 +293,9 @@ Obwohl die t-Test-Analyse der Simulator-Sickness-Fragebögen keine signifikanten
 
 Die Analyse der EEG-Daten zeigte, dass es Unterschiede in den Veränderungsmustern der Alpha-, Beta- und Theta-Wellen zwischen den Probanden gab, aber auch einige gemeinsame Trends. Die beobachteten Veränderungen der EEG-Signale deuten darauf hin, dass der AVK das Gehirn beeinflusst und eine Herausforderung für das visuelle System darstellen kann.
 
-Bezüglich der verwandten Arbeiten konnte festgestellt werden, dass anders als in dem Paper von Frey et. al. keine signifikante Abnahme in den Alphawellenlängen über die Zeit erkennbar war und es konnten sogar signifikante Zunahmen in einigen frontalen Elektroden gemessen werden. Dieses Ergebnis deckt sich mit den Ergebnissen des Papers von Guo et. al. Stimmig zu den Ergebnissen von Frey et. al waren jedoch, dass ebenso Theta und Beta Wellen an einigen Elektroden einen Zuwachs erhalten haben. Jedoch ist auch der Unterschied zwischen den verschiedenen Versuchsaufbauten zu beachten.
+Bezüglich der verwandten Arbeiten konnte festgestellt werden, dass anders als in dem Paper von Frey et. al. keine signifikante Abnahme in den Alphawellenlängen über die Zeit erkennbar war und es konnten sogar signifikante Zunahmen in einigen frontalen Elektroden gemessen werden. Dieses Ergebnis deckt sich mit den Ergebnissen des Papers von Guo et. al. Stimmig zu den Ergebnissen von Frey et. al waren jedoch, dass ebenso Theta- und Beta-Wellen an einigen Elektroden einen Zuwachs erhalten haben. Jedoch ist auch der Unterschied zwischen den verschiedenen Versuchsaufbauten zu beachten.
 
-Insgesamt tragen unsere Ergebnisse dazu bei, das Verständnis des Akkommodation-Vergenz-Konflikts und seiner Auswirkungen auf die Gehirnaktivität zu erweitern. Es bleibt jedoch noch viel zu erforschen, um die Mechanismen vollständig zu entschlüsseln. Zukünftige Studien sollten die Stichprobe erweitern und mögliche Interaktionen mit anderen Faktoren untersuchen, um ein umfassendes Bild zu erhalten.
+Insgesamt tragen unsere Ergebnisse dazu bei, das Verständnis des AVK und seiner Auswirkungen auf die Gehirnaktivität zu erweitern. Es bleibt jedoch noch viel zu erforschen, um die Mechanismen vollständig zu entschlüsseln. Zukünftige Studien sollten die Stichprobe erweitern und mögliche Interaktionen mit anderen Faktoren untersuchen, um ein umfassendes Bild zu erhalten.
 
 Letztendlich können unsere Erkenntnisse dazu beitragen, dass virtuelle und erweiterte Realitätssysteme besser auf die Bedürfnisse der Nutzer abgestimmt werden und somit eine verbesserte Nutzererfahrung bieten können.
 \section{Ausblick}
